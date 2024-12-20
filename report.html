@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Transactions Report</h1>
+    </header>
+    <main>
+        <form action="#" method="GET">
+            <label for="type">Filter by Transaction Type:</label><br>
+            <select id="type" name="type">
+                <option value="">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select><br><br>
+
+            <label for="category">Filter by Category:</label><br>
+            <input type="text" id="category" name="category"><br><br>
+
+            <button type="submit">Filter</button>
+            <br>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+        </form>
+
+        <section>
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>2024-01-01</td>
+                        <td>Income</td>
+                        <td>Paycheck</td>
+                        <td>$2000.00</td>
+                        <td>Biweekly</td>
+                    </tr>
+                    <tr>
+                        <td>2024-01-02</td>
+                        <td>Expense</td>
+                        <td>Rent</td>
+                        <td>$2000.00</td>
+                        <td>House Rent</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

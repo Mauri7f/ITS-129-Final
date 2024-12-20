@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurring Transaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recurring Transaction</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <label for="type">Transaction Type:</label><br>
+            <select id="type" name="type" required>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select><br><br>
+
+            <label for="category">Category:</label><br>
+            <input type="text" id="category" name="category" placeholder="Streaming subscription" required><br><br>
+
+            <label for="amount">Amount:</label><br>
+            <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+
+            <label for="frequency">Frequency:</label><br>
+            <select id="frequency" name="frequency" required>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select><br><br>
+
+            <label for="next_date">Next Occurrence Date:</label><br>
+            <input type="date" id="next_date" name="next_date" required><br><br>
+
+            <button type="submit">Add Recurring Transaction</button>
+            <br>
+            <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+        </form>
+    </main>
+</body>
+</html>
